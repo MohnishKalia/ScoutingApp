@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Yeah boy</h1>
+    <hr>
+    <h3>Endpoint: /team/team_key/matches/year</h3>
+    <form action="/endpoint" method="post">
+        <div>
+            <label for="team_key">Team Key</label>
+            <input type="text" name="team_key" />
+        </div>
+        <div>
+            <label for="year">Year</label>
+            <input type="number" name="year" max="2020" min="2007" />
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
