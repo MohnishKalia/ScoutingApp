@@ -1,28 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-
-<body>
-    <h1>Yeah boy</h1>
-    <hr>
-    <h3>Endpoint: /team/team_key/matches/year</h3>
-    <form action="/endpoint" method="post">
-        <div>
+<%- include('header') -%>
+<h1>Yeah boy</h1>
+<hr>
+<h3>Endpoint: /team/team_key/events/year</h3>
+<form action="/endpoint" method="post">
+    <div class="form-row">
+        <div class="form-group col">
             <label for="team_key">Team Key</label>
-            <input type="text" name="team_key" />
+            <input type="text" name="team_key" class="form-control" />
         </div>
-        <div>
+        <div class="form-group col">
             <label for="year">Year</label>
-            <input type="number" name="year" max="2020" min="2007" />
+            <input type="number" name="year" max="2020" min="2007" class="form-control" />
         </div>
-        <button type="submit">Submit</button>
-    </form>
-</body>
-
-</html>
+        <div class="form-group col">
+            <label for="aep">Additional Endpoints</label>
+            <select name="aep" class="form-control">
+                <option value=""></option>
+                <option value="/keys">/keys</option>
+                <option value="/statuses">/statuses</option>
+            </select>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<%- include('footer') -%>
