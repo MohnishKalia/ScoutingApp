@@ -14,6 +14,11 @@
         {
             "type": "npm",
             "script": "start",
+            "group": "build"
+        },
+        {
+            "type": "npm",
+            "script": "dev",
             "group": {
                 "kind": "build",
                 "isDefault": true

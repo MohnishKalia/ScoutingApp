@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && node out/app.js"
+    "start": "node out/app.js",
+    "dev": "tsc && node out/app.js"
   },
   "repository": {
     "type": "git",
@@ -20,15 +21,15 @@
   "devDependencies": {
     "@types/express": "^4.17.2",
     "@types/node": "^12.12.21",
-    "@types/node-fetch": "^2.5.4",
-    "nodemon": "^2.0.2",
-    "typescript": "^3.7.3"
+    "@types/node-fetch": "^2.5.4"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "joi": "^14.3.1",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
   }
 }
